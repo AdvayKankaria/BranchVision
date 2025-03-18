@@ -2,6 +2,11 @@
 
 BranchVision is a web-based application designed to streamline the loan application process. It provides features like document upload, OCR-based data extraction, real-time application status updates, and user authentication.
 
+<video width="600" controls>
+  <source src="BranchVision Demo(1).mp4" type="video/mp4">
+</video>
+
+
 ## Features
 
 - **User Authentication**: Secure signup and login functionality using bcrypt and JWT.
