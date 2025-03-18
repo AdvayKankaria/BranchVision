@@ -1,4 +1,4 @@
-# BranchVision
+# BranchVision - Standard Chartered Hackathon
 
 BranchVision is a web-based application designed to streamline the loan application process. It provides features like document upload, OCR-based data extraction, real-time application status updates, and user authentication.
 
