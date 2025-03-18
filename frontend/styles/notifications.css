@@ -1,0 +1,11 @@
+/* ...existing code... */
+section[aria-label="Notifications alt+T"] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto; /* Ensure it's not positioned at the bottom */
+    left: auto;   /* Ensure it's not positioned on the left */
+    margin: 1rem;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+/* ...existing code... */

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "@fontsource/inter";
+
+/* Ensure Tailwind CSS is installed and configured in tailwind.config.js */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+  .text-primary {
+    color: hsl(var(--primary));
+  }
+}
+@layer base {
+  :root {
+    --background: 255 100% 98%;
+    --foreground: 220 13% 13%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 255 100% 100%;
+    --border: 220 14% 90%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-gray-800;
+  }
+
+  a {
+    @apply text-primary underline hover:no-underline;
+  }
+
+  button {
+    border-radius: 0.375rem;
+    background-color: hsl(120, 60%, 50%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: hsl(120, 60%, 40%); /* Green text color */
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-in-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.7s ease-out forwards;
+  }
+
+  .border-border {
+    border-color: var(--border-color, #e5e7eb);
+  }
+
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+
+  .text-foreground {
+    color: hsl(var(--foreground));
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.toast-container {
+  position: fixed;
+  top: 1rem; /* Adjust as needed */
+  right: 1rem; /* Adjust as needed */
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.some-class {
+  @apply bg-blue-500 text-white;
+}
+
+@layer components {
+  .file-upload-button {
+    @apply bg-primary text-primary-foreground border border-border rounded-md px-4 py-2 text-center cursor-pointer;
+    display: inline-block;
+    font-size: 1rem; /* Ensure text is readable */
+    font-weight: 500; /* Slightly bold for better visibility */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .file-upload-button:hover {
+    @apply bg-opacity-90 text-primary-foreground;
+  }
+
+  .file-upload-area {
+    @apply bg-background border border-dashed border-border rounded-md p-4 text-center text-foreground;
+    font-size: 1rem; /* Ensure text is readable */
+    font-weight: 500; /* Slightly bold for better visibility */
+    line-height: 1.5; /* Improve spacing for better readability */
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .file-upload-area:hover {
+    @apply border-primary bg-primary/10;
+  }
+}

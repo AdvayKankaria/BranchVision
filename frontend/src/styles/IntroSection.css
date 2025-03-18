@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.feature-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.feature-showcase h2 {
+  margin-bottom: 0.5rem;
+}
+
+.feature-showcase p {
+  margin-bottom: 1rem;
+}
+
+.feature-showcase .grid {
+  gap: 1rem;
+}
+
+.feature-showcase .rounded-lg {
+  padding: 0.75rem;
+}
