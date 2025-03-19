@@ -6,6 +6,7 @@ BranchVision is a web-based application designed to streamline the loan applicat
 <video controls>
   <source src="https://github.com/user-attachments/assets/2458590b-3c47-4fc1-90ef-87415665798e" type="video/mp4">
 </video>
+[▶ Watch the demo](https://github.com/user-attachments/assets/2458590b-3c47-4fc1-90ef-87415665798e)
 
 
 ## Features
