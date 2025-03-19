@@ -1,4 +1,4 @@
-# BranchVision - Standard Chartered Hackathon
+0# BranchVision - Standard Chartered Hackathon
 
 BranchVision is a web-based application designed to streamline the loan application process. It provides features like document upload, OCR-based data extraction, real-time application status updates, and user authentication.
 
@@ -98,4 +98,4 @@ Member 3 :- Ishit Jain
 
 Member 4 :- Ruchita Garg
 
-Member 5 :- Advay Kankaria
+Member 5 :- V.Advay Kankaria
