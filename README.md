@@ -91,5 +91,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contributors 
 
 Member 1 :- Krishna Jalan
+
 Member 2 :- Deep Kakadiya
+
 Member 3 :- Ishit Jain
+
+Member 4 :- Ruchita Garg
+
+Member 5 :- Advay Kankaria
