@@ -92,3 +92,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 Member 1 :- Krishna Jalan
 Member 2 :- Deep Kakadiya
+Member 3 :- Ishit Jain
